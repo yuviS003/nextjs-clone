@@ -1,14 +1,14 @@
 import React from "react";
-import { Route, Router } from "react-router-dom";
-import { Navbar } from "./components";
+import { Route, Routes } from "react-router-dom";
+import { Navbar, Hero } from "./components";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Router>
-        <Route index elements={<>Hero</>} />
-      </Router>
+      <Routes>
+        <Route index element={<Hero />} />
+      </Routes>
     </div>
   );
 };
